@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <title>Piano_v1</title>
+    <style>
+    
+    body {
+      background: #0aafff22;
+    }
+    button {
+      width: 65px;
+      height: 170px;
+      color: white;
+      background:grey;
+    }
+    
+     h1 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 2px;
+     }
+      
+    </style>
+  </head>
+  <body>
+    <h1>PIANO V1.0</h1>
+    
+    <button onclick="mainkan('v10')">#10</button>
+    <button onclick="mainkan('v9')">#9</button>
+    <button onclick="mainkan('v8')">#8</button>
+    <button onclick="mainkan('v7')">#7</button>
+    <button onclick="mainkan('v6')">#6</button>
+    <button onclick="mainkan('v5')">#5</button>
+    <button onclick="mainkan('v4')">#4</button>
+    <button onclick="mainkan('v3')">#3</button>
+    <button onclick="mainkan('v2')">#2</button>
+    <button onclick="mainkan('v1')">#1</button>
+    
+    <script>
+      function mainkan(nada) {
+        let suara= new Audio (nada+".mp3");
+        suara.play();
+      }
+    </script>
+    
+  </body>
+</html>
